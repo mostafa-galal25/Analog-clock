@@ -31,6 +31,10 @@ core functionality of the clock relies on converting time values into angular me
 Total Angle ($2\pi$ Radians = 360 Degrees): The code converts time units into radians, starting from a baseline position (usually the 12 position).
 Second Hand Calculation:It uses a factor of $6$ (since $60 \text{ seconds} \times 6 \text{ degrees/second} = 360 \text{ degrees}$).It includes the microsecond component for smooth, continuous movement.Formula used for angle (in radians): $\text{sec} = \text{radians}((\text{current\_second} + \text{microseconds}) \times 6 - 90)$Hand Coordinates: The position of each hand's tip is calculated using the center $(C_x, C_y)$, the hand's length (radius $R$), and the calculated angle ($\theta$):$$X = C_x + R \cdot \cos(\theta) \\
 Y = C_y + R \cdot \sin(\theta)
+
+
 🤝 ContributingFeedback and contributions are welcome!
 Feel free to fork the repository and submit pull requests for improvements such as:Adding tick marks for minutes and seconds.Implementing a digital/analog switch.Improving performance or cleanup.
+
+
 📄 LicenseDistributed under the MIT License. See LICENSE for more information.
