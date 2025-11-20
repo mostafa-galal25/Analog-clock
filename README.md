@@ -1,6 +1,7 @@
 # Real-Time Analog-clock
 🕰️ Real-Time Analog Clock (OpenCV & NumPy)A live, graphical analog clock application built entirely using OpenCV and NumPy.
 This project demonstrates real-time drawing and geometric calculations to accurately reflect the current system time.
+
 🌟 FeaturesReal-Time Animation:
 The clock hands update smoothly, including sub-second accuracy for the second hand.
 Geometric Drawing:Uses trigonometric functions (math.sin, math.cos) to calculate the exact endpoint coordinates for the hour, minute, and second hands.Digital Display:
@@ -10,17 +11,21 @@ Second Hand:Blue
 (Thin)Minute Hand:Cyan/Yellow 
 (Medium)Hour Hand:Light Blue/Pink 
 (Thick)Hour Markers: Numbers 1 through 12 are drawn on the clock face.
+
 🛠️ Technologies UsedTechnologyPurposePythonCore programming language.
 OpenCV (cv2)Used for creating the display window, drawing shapes (circles, lines), and displaying text in real-time.NumPyUsed to initialize and manage the canvas (image array) efficiently.
 mathEssential for calculating angular positions of the hands using trigonometry.
 datetimeUsed to fetch the current system time (hour, minute, second, microsecond).
+
 📦 PrerequisitesEnsure you have Python installed, and then install the necessary libraries:Bashpip install opencv-python numpy
 
 Ensure Dependencies are Met:Verify you have opencv-python and numpy installed (see Prerequisites).
+
 ▶️ How to RunExecute the Python script from your terminal:Bashpython your_clock_script_name.py
 (Replace your_clock_script_name.py with the actual name of your Python file.) 
 A window titled "clock" will open, displaying the analog clock synchronized with your system time.
 To Exit: Press the 'q' key on your keyboard.
+
 📐 Code Logic HighlightsThe
 core functionality of the clock relies on converting time values into angular measurements:
 Total Angle ($2\pi$ Radians = 360 Degrees): The code converts time units into radians, starting from a baseline position (usually the 12 position).
